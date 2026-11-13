@@ -1,0 +1,47 @@
+# ============================================================
+#  Configuração do monitor de carros
+#  Edite aqui e faça commit: a próxima execução já usa os novos valores.
+# ============================================================
+
+[busca]
+preco_min = 15000
+preco_max = 35000
+
+# Centro da busca e raio em km (distância em linha reta entre as cidades).
+cidade_centro = "Parobé"
+raio_km = 50
+
+# Opcional: só aceitar carros a partir deste ano (0 = qualquer ano).
+ano_min = 0
+
+# Opcional: palavras que, se aparecerem no título, descartam o anúncio.
+# Ex.: ["leilão", "sinistro", "batido"]
+palavras_excluir = ["leilão", "leilao", "sinistro", "sucata"]
+
+# Opcional: se preenchido, só aceita anúncios cujo título contenha
+# alguma dessas palavras. Ex.: ["gol", "onix", "hb20", "palio"]
+modelos = []
+
+[envio]
+# Máximo de carros por dia no Telegram (os mais baratos primeiro).
+# O resto aparece só como contagem, para não lotar o chat.
+max_por_dia = 40
+
+# Mandar mensagem mesmo quando não houver nada novo?
+avisar_sem_novidades = true
+
+[fontes.mobiauto]
+ativo = true
+# A Mobiauto busca num raio de ~25 km em volta de cada cidade abaixo.
+# Estas "cidades-polo" cobrem os 50 km em volta de Parobé; o filtro de
+# distância é aplicado depois.
+cidades_polo = [
+  "rs-parobe", "rs-novo-hamburgo", "rs-gravatai", "rs-gramado",
+  "rs-santo-antonio-da-patrulha", "rs-canoas",
+]
+
+[fontes.napista]
+ativo = true
+
+[fontes.chavesnamao]
+ativo = true
