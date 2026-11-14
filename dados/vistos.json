@@ -495,7 +495,7 @@
 "preco": 25900.0,
 "primeiro": "2026-11-13",
 "titulo": "Chevrolet Prisma Maxx 1.4 (Flex)",
-"ultimo": "2026-11-13"
+"ultimo": "2026-11-14"
 },
 "Mobiauto:12188764": {
 "preco": 25900.0,
@@ -1203,7 +1203,7 @@
 "preco": 25900.0,
 "primeiro": "2026-11-13",
 "titulo": "Peugeot 207 SW Escapade 1.6 16V (flex)",
-"ultimo": "2026-11-13"
+"ultimo": "2026-11-14"
 },
 "Mobiauto:23313748": {
 "preco": 31900.0,
@@ -1353,7 +1353,7 @@
 "preco": 34900.0,
 "primeiro": "2026-11-13",
 "titulo": "Chevrolet Celta LT 1.0 (Flex)",
-"ultimo": "2026-11-13"
+"ultimo": "2026-11-14"
 },
 "Mobiauto:28150920": {
 "preco": 34900.0,
@@ -1575,7 +1575,7 @@
 "preco": 29800.0,
 "primeiro": "2026-11-13",
 "titulo": "Ford Ka Ka 1.0 RoCam S",
-"ultimo": "2026-11-13"
+"ultimo": "2026-11-14"
 },
 "Mobiauto:29274304": {
 "preco": 33900.0,
@@ -2283,7 +2283,7 @@
 "preco": 32900.0,
 "primeiro": "2026-11-13",
 "titulo": "Fiat Uno Vivace 1.0 8V (Flex) 2p",
-"ultimo": "2026-11-13"
+"ultimo": "2026-11-14"
 },
 "Mobiauto:31982859": {
 "preco": 25900.0,
@@ -2307,7 +2307,7 @@
 "preco": 32900.0,
 "primeiro": "2026-11-13",
 "titulo": "Fiat Siena HLX 1.8 8V (Flex)",
-"ultimo": "2026-11-13"
+"ultimo": "2026-11-14"
 },
 "Mobiauto:32134985": {
 "preco": 25900.0,
@@ -2457,7 +2457,7 @@
 "preco": 26900.0,
 "primeiro": "2026-11-13",
 "titulo": "Renault Sandero Expression 1.0 16V (flex)",
-"ultimo": "2026-11-13"
+"ultimo": "2026-11-14"
 },
 "Mobiauto:32294688": {
 "preco": 32900.0,
@@ -2523,7 +2523,7 @@
 "preco": 34900.0,
 "primeiro": "2026-11-13",
 "titulo": "Chevrolet Corsa Hatch Maxx 1.4 (Flex)",
-"ultimo": "2026-11-13"
+"ultimo": "2026-11-14"
 },
 "Mobiauto:32451440": {
 "preco": 29900.0,
@@ -2937,7 +2937,7 @@
 "preco": 29990.0,
 "primeiro": "2026-11-13",
 "titulo": "Chevrolet Corsa Hatch Maxx 1.4 (Flex)",
-"ultimo": "2026-11-13"
+"ultimo": "2026-11-14"
 },
 "Mobiauto:33172829": {
 "preco": 29900.0,
@@ -2991,7 +2991,7 @@
 "preco": 31990.0,
 "primeiro": "2026-11-13",
 "titulo": "Volkswagen Fox 1.0 Mi Total Flex 8V",
-"ultimo": "2026-11-13"
+"ultimo": "2026-11-14"
 },
 "Mobiauto:33236875": {
 "preco": 33900.0,
@@ -4065,7 +4065,7 @@
 "preco": 31800.0,
 "primeiro": "2026-11-13",
 "titulo": "Renault Sandero Expression 1.0 16V (flex)",
-"ultimo": "2026-11-13"
+"ultimo": "2026-11-14"
 },
 "Mobiauto:33799348": {
 "preco": 25990.0,
@@ -4349,6 +4349,24 @@
 "titulo": "Citroën C4 GLX 1.6 (flex)",
 "ultimo": "2026-11-14"
 },
+"Mobiauto:33897871": {
+"preco": 34900.0,
+"primeiro": "2026-11-14",
+"titulo": "Chevrolet Spin LT 5S 1.8 (Flex)",
+"ultimo": "2026-11-14"
+},
+"Mobiauto:33898768": {
+"preco": 34900.0,
+"primeiro": "2026-11-14",
+"titulo": "Chevrolet Celta LT 1.0 (Flex)",
+"ultimo": "2026-11-14"
+},
+"Mobiauto:33899964": {
+"preco": 34900.0,
+"primeiro": "2026-11-14",
+"titulo": "Volkswagen Gol Novo  1.0 TEC (Flex) 2p",
+"ultimo": "2026-11-14"
+},
 "Mobiauto:4080055": {
 "preco": 29900.0,
 "primeiro": "2026-11-13",
@@ -4539,7 +4557,7 @@
 "preco": 27900.0,
 "primeiro": "2026-11-13",
 "titulo": "Renault Megane Grand Tour Mégane Grand Tour Dynamique 2.0 16V",
-"ultimo": "2026-11-13"
+"ultimo": "2026-11-14"
 },
 "Mobiauto:7033895": {
 "preco": 31900.0,
@@ -6209,6 +6227,12 @@
 "titulo": "Peugeot 206 Presence 1.4/1.4 Flex 8v 5p",
 "ultimo": "2026-11-14"
 },
+"NaPista:5869816e-66ce-41f7-a4b3-9c3dca2d2194": {
+"preco": 34800.0,
+"primeiro": "2026-11-14",
+"titulo": "Chevrolet Cobalt 1.4 8v Econoflex Ltz",
+"ultimo": "2026-11-14"
+},
 "NaPista:58a77364-8b8d-4c13-aa34-c3fd3076cedb": {
 "preco": 33900.0,
 "primeiro": "2026-11-13",
@@ -6537,6 +6561,12 @@
 "preco": 34900.0,
 "primeiro": "2026-11-13",
 "titulo": "Chevrolet Agile 1.4 Econoflex Ltz",
+"ultimo": "2026-11-14"
+},
+"NaPista:6bebcc6a-f38b-4888-b7e6-74827867386f": {
+"preco": 34900.0,
+"primeiro": "2026-11-14",
+"titulo": "Chevrolet Spin 1.8 Econoflex Lt 5s",
 "ultimo": "2026-11-14"
 },
 "NaPista:6c162617-8c3c-49df-8c41-da4e30e57097": {
@@ -8069,6 +8099,12 @@
 "titulo": "Chevrolet Corsa Sed. Premium 1.4 8v Econoflex 4p",
 "ultimo": "2026-11-14"
 },
+"NaPista:bb25a18a-4bc2-4698-85c0-8edc9464deb6": {
+"preco": 25900.0,
+"primeiro": "2026-11-14",
+"titulo": "Fiat Palio 1.0 Fire Flex",
+"ultimo": "2026-11-14"
+},
 "NaPista:bb41fca6-fa3f-4f69-aad5-b990d4ee4853": {
 "preco": 28999.0,
 "primeiro": "2026-11-13",
@@ -8511,6 +8547,12 @@
 "preco": 33900.0,
 "primeiro": "2026-11-13",
 "titulo": "Chevrolet Vectra 2.0 Expression Flexpower",
+"ultimo": "2026-11-14"
+},
+"NaPista:d15e76f6-4641-46c4-a3d0-ddcf23255c6c": {
+"preco": 29900.0,
+"primeiro": "2026-11-14",
+"titulo": "Fiat Stilo 1.8 8v Flex",
 "ultimo": "2026-11-14"
 },
 "NaPista:d16aed38-96d0-4099-a04f-3d6bd0bf3be0": {
@@ -9000,7 +9042,7 @@
 "ultimo": "2026-11-14"
 },
 "NaPista:ead6251d-a2a7-46b7-8f51-89c08fb82f74": {
-"preco": 32900.0,
+"preco": 27900.0,
 "primeiro": "2026-11-13",
 "titulo": "Volkswagen Gol 1.0 8v Total Flex",
 "ultimo": "2026-11-14"
@@ -9366,7 +9408,7 @@
 "ultimo": "2026-11-14"
 },
 "NaPista:fe8aa568-103f-4dba-b2bc-048a3802e574": {
-"preco": 25900.0,
+"preco": 19900.0,
 "primeiro": "2026-11-13",
 "titulo": "Volkswagen Parati 1.6 Track & Field Total Flex",
 "ultimo": "2026-11-14"
@@ -9393,6 +9435,12 @@
 "preco": 33900.0,
 "primeiro": "2026-11-13",
 "titulo": "Fiat Uno Attracti. Celeb.1.4 Evo F.flex 8v 4p",
+"ultimo": "2026-11-14"
+},
+"NaPista:fff9be28-da7e-494d-ad64-1ed9ff0df143": {
+"preco": 24900.0,
+"primeiro": "2026-11-14",
+"titulo": "Chevrolet Prisma 1.4 8v Econoflex Maxx",
 "ultimo": "2026-11-14"
 }
 }
