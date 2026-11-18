@@ -64,6 +64,8 @@ def buscar(cfg: dict, busca: dict, cidades: list[str]) -> list[Anuncio]:
                 link=link,
                 ano=int(ano),
                 vendedor=(oferta.get("seller") or {}).get("name"),
+                foto=(item.get("image")[0] if isinstance(item.get("image"), list) and item.get("image")
+                      else item.get("image") if isinstance(item.get("image"), str) else ""),
             ))
     log.info("Chaves na Mão: %d anúncios em %d cidades", len(anuncios), len(cidades))
     return list(anuncios.values())

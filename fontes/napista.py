@@ -36,6 +36,9 @@ def buscar(cfg: dict, busca: dict, cidades: list[str]) -> list[Anuncio]:
                     ano=o.get("modelYear"),
                     km=o.get("mileage") or None,
                     vendedor=o.get("seller"),
+                    foto=next((p.get("url") for p in sorted(o.get("photos") or [],
+                                                           key=lambda p: p.get("order", 0))
+                               if p.get("url")), ""),
                 ))
             total = res.get("offersTotal") or 0
             if not ofertas or pagina * len(ofertas) >= total:

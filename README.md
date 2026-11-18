@@ -7,6 +7,9 @@ Todo dia às 08:00 este robô procura carros de **R$ 15.000 a R$ 35.000** num ra
 **Fontes:** Mobiauto, NaPista e Chaves na Mão. O mesmo carro anunciado em mais de
 um site aparece uma vez só, com os links de todos.
 
+Cada carro chega como uma **foto com a descrição na legenda**. Só a primeira mensagem do
+dia (o resumo) faz o celular tocar; as dos carros chegam em silêncio.
+
 > OLX, Webmotors e Mercado Livre bloqueiam acesso automatizado, e o iCarros
 > desativou os classificados. Por isso esses sites ficaram de fora.
 
@@ -64,7 +67,8 @@ Edite o [config.toml](config.toml) (dá para editar direto no site do GitHub, no
 - `ano_min`: ano mínimo
 - `modelos`: ex. `["gol", "onix", "hb20"]` para receber só esses modelos
 - `palavras_excluir`: descarta anúncios com essas palavras no título
-- `max_por_dia`: limite de carros por mensagem diária
+- `max_por_dia`: limite de carros por dia
+- `fotos`: `false` para voltar à lista compacta, só com texto
 
 Se mudar muito a região, ajuste também `cidades_polo` da Mobiauto.
 

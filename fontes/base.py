@@ -33,6 +33,7 @@ class Anuncio:
     ano: int | None = None
     km: int | None = None
     vendedor: str | None = None
+    foto: str = ""  # URL da primeira foto
     distancia_km: float | None = field(default=None, compare=False)
     # Mesmo carro encontrado em outros sites (preenchido em main.agrupar).
     duplicados: list["Anuncio"] = field(default_factory=list, compare=False, repr=False)

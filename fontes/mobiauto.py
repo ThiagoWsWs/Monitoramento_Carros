@@ -8,6 +8,7 @@ from .base import Anuncio, baixar, next_data, slug
 log = logging.getLogger(__name__)
 BASE = "https://www.mobiauto.com.br/comprar/carros"
 MAX_PAGINAS = 40
+FOTO = "https://image1.mobiauto.com.br/images/api/images/v1.0"
 
 
 def _url(cidade_polo: str, pmin: int, pmax: int, pagina: int) -> str:
@@ -42,6 +43,7 @@ def buscar(cfg: dict, busca: dict) -> list[Anuncio]:
                 marca = (trim.get("make") or {}).get("name", "")
                 modelo = (trim.get("model") or {}).get("name", "")
                 local = (it.get("dealer") or {}).get("location") or {}
+                imgs = sorted(it.get("images") or [], key=lambda x: x.get("position", 0))
                 a = Anuncio(
                     fonte="Mobiauto",
                     id=str(it["id"]),
@@ -52,6 +54,8 @@ def buscar(cfg: dict, busca: dict) -> list[Anuncio]:
                     ano=(trim.get("model") or {}).get("year") or trim.get("productionYear"),
                     km=it.get("km"),
                     vendedor=(it.get("dealer") or {}).get("name"),
+                    foto=(f"{FOTO}/{imgs[0]['imageId']}/transform/fl_progressive,f_jpg,q_80,w_800"
+                          if imgs and imgs[0].get("imageId") else ""),
                 )
                 anuncios.setdefault(a.id, a)
         log.info("Mobiauto %s: %d anúncios acumulados", polo, len(anuncios))

@@ -113,6 +113,7 @@ def agrupar(anuncios: list[Anuncio]) -> list[Anuncio]:
                 break
         if par:
             par.duplicados.append(a)
+            par.foto = par.foto or a.foto
         else:
             grupos.setdefault(k, []).append(a)
             unicos.append(a)
@@ -180,9 +181,9 @@ def montar_mensagem(cfg, novos, baixaram, total, falhas):
     )
     blocos = []
     for a, antes in sorted(baixaram, key=lambda x: x[0].preco)[:maximo]:
-        blocos.append(bloco(a, f"  📉 <s>{reais(antes)}</s>"))
+        blocos.append((a.foto, bloco(a, f"  📉 <s>{reais(antes)}</s>")))
     for a in sorted(novos, key=lambda x: x.preco)[: max(0, maximo - len(blocos))]:
-        blocos.append(bloco(a))
+        blocos.append((a.foto, bloco(a)))
     rodape = []
     nao_mostrados = len(novos) + len(baixaram) - len(blocos)
     if nao_mostrados > 0:
@@ -220,13 +221,16 @@ def main() -> int:
 
     if args.teste:
         sys.stdout.reconfigure(encoding="utf-8")
-        print("\n" + cab + "\n\n" + "\n\n".join(blocos) + ("\n\n" + rodape if rodape else ""))
+        print("\n" + cab + "\n\n" + "\n\n".join(f"[foto: {f or '(sem foto)'}]\n{b}" for f, b in blocos) + ("\n\n" + rodape if rodape else ""))
         return 0
 
     if blocos or falhas or cfg.get("envio", {}).get("avisar_sem_novidades", True):
         if not blocos:
             cab += "\n\nNenhum anúncio novo hoje. 😴"
-        telegram.enviar_blocos(cab, blocos, rodape)
+        if cfg.get("envio", {}).get("fotos", True):
+            telegram.enviar_com_fotos(cab, blocos, rodape)
+        else:
+            telegram.enviar_blocos(cab, [b for _, b in blocos], rodape)
 
     ARQ_VISTOS.parent.mkdir(exist_ok=True)
     ARQ_VISTOS.write_text(json.dumps(vistos, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")

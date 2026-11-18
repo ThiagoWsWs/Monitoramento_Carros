@@ -26,6 +26,9 @@ modelos = []
 # Máximo de carros por dia no Telegram (os mais baratos primeiro).
 # O resto aparece só como contagem, para não lotar o chat.
 max_por_dia = 40
+# Mandar cada carro com a foto (uma mensagem por carro)?
+# false = lista compacta, só texto.
+fotos = true
 
 # Mandar mensagem mesmo quando não houver nada novo?
 avisar_sem_novidades = true
