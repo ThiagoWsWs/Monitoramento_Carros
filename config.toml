@@ -12,7 +12,7 @@ cidade_centro = "Parobé"
 raio_km = 50
 
 # Opcional: só aceitar carros a partir deste ano (0 = qualquer ano).
-ano_min = 0
+ano_min = 2010
 
 # Opcional: palavras que, se aparecerem no título, descartam o anúncio.
 # Ex.: ["leilão", "sinistro", "batido"]
